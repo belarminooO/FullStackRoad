@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com formularios</title>
+</head>
+
+<body>
+  <!--
+  <label></label>Serve para dar indicacao sobre o campo a preencher
+  <input> campo no qual o user ira inserir algo...
+    > por default - type="text"
+      > type="submit" - Botao para submissao do formulario...
+    > placeholder="" - texto para dar dica no campo do input.
+
+  NB : label tem a propriedade for="" que serve para referenciar o <input> ao qual ele esta associado.
+  o input deve ter id="" e name="" identicos ao for="" da label.
+
+  -->
+
+  <h1>Formularios</h1>
+  <form>
+    <label for="pnome">Primeiro Nome</label>
+    <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome"> <br> <br>
+
+    <label for="unome">Ultimo nome</label>
+    <input type="text" id="unome" name="unome" placeholder="Seu ultimo nome"> <br> <br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+
+</body>
+</html>
