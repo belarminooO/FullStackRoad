@@ -13,6 +13,7 @@
     > por default - type="text"
       > type="submit" - Botao para submissao do formulario...
     > placeholder="" - texto para dar dica no campo do input.
+    > required - campo obrigatorio.
 
   NB : label tem a propriedade for="" que serve para referenciar o <input> ao qual ele esta associado.
   o input deve ter id="" e name="" identicos ao for="" da label.
@@ -22,11 +23,46 @@
   <h1>Formularios</h1>
   <form>
     <label for="pnome">Primeiro Nome</label>
-    <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome"> <br> <br>
+    <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome" required> <br> <br>
 
     <label for="unome">Ultimo nome</label>
-    <input type="text" id="unome" name="unome" placeholder="Seu ultimo nome"> <br> <br>
+    <input type="text" id="unome" name="unome" placeholder="Seu ultimo nome" required> <br> <br>
 
+    <!-- Tipo RADRIO-->
+     <label for="">
+     <strong>Qual seu nivel como programador atualmente</strong>
+     </label> <br>
+
+     <label>
+      <!-- checked - para deixar pre selecionado -->
+        <input type="radio" name="nivel" value="iniciante"> Sou iniciante
+     </label>
+      <label>
+        <input type="radio" name="nivel" value="medio"> Comecei a pouco tempo
+      </label>
+      <label>
+        <input type="radio" name="nivel" value="avancado"> Sou avançado
+      </label> <br> <br>
+
+      <!-- Tipo Select para selecionar itens -->
+      <label for="escolaridade">
+        <strong>Sua escolaridade</strong>
+      </label>
+      <select id="escolaridade" required>
+        <!--
+        selected - para deixar pre selecionado.
+        disabled - para desativar a selecao dessa opcao
+          -->
+        <option selected disabled value="">Selecione</option>
+        <option>Educacao basica</option>
+        <option>Ensino medio</option>
+        <option>Ensino Superior</option>
+        <option>Pos graduacao</option>
+      </select>
+
+
+
+    <br><br>
     <input type="submit" value="Cadastrar">
   </form>
 
