@@ -12,6 +12,11 @@
   <input> campo no qual o user ira inserir algo...
     > por default - type="text"
       > type="submit" - Botao para submissao do formulario...
+      > type="radio" - para 1 so escolha dentre muitas. (a propriedeade name="" dos varios inputs deve ser igual)
+      > type="checkbox" - para varias escolhas dentre muitas.
+      > type="email" - aplica validacoes basicas para verrificar se trata-se de um email ou nao...
+      > type="datetime-local" - para recolher data e hora.
+      > type="date" - para recolher a data.
     > placeholder="" - texto para dar dica no campo do input.
     > required - campo obrigatorio.
 
@@ -22,6 +27,10 @@
 
   <h1>Formularios</h1>
   <form>
+
+    <label for="email">Seu email</label>
+    <input type="email" name="email" id="email"> <br> <br>
+
     <label for="pnome">Primeiro Nome</label>
     <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome" required> <br> <br>
 
@@ -77,6 +86,11 @@
       <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
       <label for="tecnologia4">PHP</label>
 
+      <br> <br>
+
+      <!--Tipo Date-->
+      <label for="nascimento">Data de nascimento</label>
+      <input type="datetime-local" name="nascimento" id="nascimento">
 
     <br><br>
     <input type="submit" value="Cadastrar">
