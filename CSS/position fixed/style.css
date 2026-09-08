@@ -20,25 +20,23 @@ body {
 
 /*
  1. por padrao temos o static ou seja estatico.
-
  2. Relative o elemento e posicionado em realacao a sua posicao normal.
  (top, bottom, left, right).
-
  3. Absolute - e posicionado em relacao ao seu elemento pai mais proximo q
  possui position relative se nao tiver relative E posicionado em relacao ao body.
- (top, bottom, left, right).
-
- 4. Fixed - e posicionado em relacao ao viewport (e a area no browser onde aparece
-seu site) sempre fica na mesma posicao mesmo ao scrollar a pagina.
-(top, bottom, left, right).
-
 */
 
 .area {
-  width: 200px;
-  height: 80px;
-  background-color: green;
-  position: fixed;
-  top: 50px;
-  right: 80px;
+  position: relative;
+  width: 650px;
+  height: 500px;
+
+  border: 5px solid green;
+}
+
+.area-absolute{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 5px solid blue;
 }
