@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  height: 180vh;
+}
+
+.container{
+  background-color: #121212;
+  height: 500px;
+  margin: 50px;
+
+  /*
+  ativando flexbox no conteiner...
+  por padrao ele trata os elementos em linha e coluna, orientando em linha.(flex-direction: row).
+  */
+  display: flex;
+  flex-direction: column;
+}
+
+.area{
+  width: 100px;
+  height: 100px;
+}
+
+/*
+ flex: usa-se nos filhos da flexbox(display: flex), e serve
+ para que os elementos filhos ocupem o espaço...
+*/
+.item-1{
+  background-color: red;
+  flex: 1;
+}
+
+.item-2{
+  background-color: blue;
+  flex: 1;
+}
+
+.item-3{
+  background-color: darkgreen;
+  flex: 1;
+}
