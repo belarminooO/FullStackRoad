@@ -235,7 +235,26 @@ footer p {
       width: 80%;
       margin-top: 30px;
     }
+    /* FIM SOBRE */
 
-    
+    /* INICIO PROJETOS */
+    .projects img{
+      width: 27.5%
+    }
+    /* FIM PROJETOS */
 
+    /* INCIO RODAPE */
+    footer{
+      flex-direction: column;
+    }
+
+    footer h3{
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    footer p{
+      margin: 0;
+    }
+    /* FIM RODAPE */
 }
