@@ -70,6 +70,11 @@
   border-radius: 4px;
   font-size: 18px;
   font-weight: bold;
+  transition: 0.9s;
+}
+
+.call-to-action:hover{
+  transform: scale(1.1);
 }
 
 .main a {
@@ -78,3 +83,33 @@
 }
 
 /* FIM MAIN */
+
+/* INICIO ABOUT */
+.about{
+  background-color: #FFFFFF;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about div{
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.about img{
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.about h2{
+  font-size: 32px;
+  margin-bottom: 14px;
+} 
+/* FIM DO ABOUT */
