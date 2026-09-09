@@ -17,6 +17,9 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 9; /* faz com que o menu esteja em uma camanada diferente, ficando por cima dos demais elementos*/
 }
 
 .nav-list{
@@ -111,5 +114,5 @@
 .about h2{
   font-size: 32px;
   margin-bottom: 14px;
-} 
+}
 /* FIM DO ABOUT */
