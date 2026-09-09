@@ -196,3 +196,46 @@ footer a{
 footer p {
   margin-left: 12px;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 1050px){
+
+  /* INCIO MAIN */
+  .main h1 {
+    font-size: 45px;
+  }
+
+  .main p{
+    font-size: 18px;
+  }
+
+  .main{
+    background-size: cover;
+  }
+  /* FIM MAIN */
+
+  /* INICIO SOBRE */
+    .about{
+      flex-direction: column;
+      padding-top: 80px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+
+    .about div{
+      max-width: 80%;
+    }
+
+    .about div h2 {
+      font-size: 45px;
+    }
+
+    .about img{
+      width: 80%;
+      margin-top: 30px;
+    }
+
+    
+
+}
