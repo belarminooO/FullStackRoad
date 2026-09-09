@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  height: 180vh;
+}
+
+.container{
+  background-color: #121212;
+  height: 500px;
+  margin: 50px;
+
+  /*
+  ativando flexbox no conteiner...
+  por padrao ele trata os elementos em linha e coluna, orientando em linha.(flex-direction: row).
+  */
+  display: flex;
+  flex-direction: row;
+}
+
+.area{
+  width: 100px;
+  height: 100px;
+
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+.item-1{
+  background-color: red;
+  flex-shrink: 1;
+}
+
+.item-2{
+  background-color: blue;
+  flex-shrink: 1;
+}
+
+.item-3{
+  background-color: darkgreen;
+  /* Este elemento vai reduzir 2 vezes mais em relacao aos outros */
+  flex-shrink: 2;
+}
