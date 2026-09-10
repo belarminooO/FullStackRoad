@@ -1,21 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio</title>
+    <title>Belarmino Sacate | Front-End Developer Júnior</title>
   </head>
 
   <body>
-    <!-- INICIO HEADER -->
+    <!-- INICIO NAVEGACAO -->
     <nav class="nav">
+      <a class="brand" href="#home">Belarmino Sacate</a>
       <ul class="nav-list">
         <li>
           <a href="#home">Home</a>
@@ -26,69 +27,160 @@
         <li>
           <a href="#projetos">Projetos</a>
         </li>
+        <li>
+          <a href="#contacto">Contacto</a>
+        </li>
       </ul>
     </nav>
-    <!-- FIM HEADER -->
+    <!-- FIM NAVEGACAO -->
 
     <!-- INICIO MAIN -->
-    <section id="home" class="main">
-      <div>
-        <h1>Ola,<br />Seja bem vindo</h1>
-        <p>Crie soluçoes para seu projeto</p>
-        <a href="#projetos">
-          <button class="call-to-action">Veja meus projetos 👇</button>
+    <main>
+      <section id="home" class="home">
+        <div class="home-content">
+          <p class="eyebrow">Front-End Developer Júnior</p>
+          <h1>Olá, sou o Belarmino Sacate.</h1>
+          <p class="home-text">
+            Recém-licenciado em Engenharia Informática e de Multimédia pelo
+            ISEL, com foco em desenvolvimento web, interfaces responsivas e
+            aprendizagem contínua.
+          </p>
+
+          <div class="home-actions">
+            <a class="button primary" href="#projetos">Ver projetos</a>
+            <a
+              class="button secondary"
+              href="https://github.com/belarminooO"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- FIM MAIN -->
+
+      <!-- INCIO SOBRE -->
+      <section id="sobre" class="about">
+        <div class="about-content">
+          <p class="section-label">Sobre</p>
+          <h2>Estou a construir o meu caminho como front-end developer.</h2>
+          <p>
+            Tenho bases em HTML, CSS, JavaScript, PHP, REST APIs, MySQL, Git e
+            GitHub. Durante a licenciatura trabalhei em projetos académicos e
+            aprofundei o interesse por interfaces web, experiência do utilizador
+            e desenvolvimento front-end.
+          </p>
+          <p>
+            Neste momento estou a reforçar fundamentos através de prática
+            constante, pequenos projetos e documentação do meu percurso no
+            GitHub. Procuro a minha primeira oportunidade profissional na área
+            de desenvolvimento web.
+          </p>
+        </div>
+        <img src="images/belarmino.jpeg" alt="Espaço de trabalho com computador" />
+      </section>
+      <!-- FIM SOBRE -->
+
+      <!-- INICIO PROJETOS -->
+      <section id="projetos" class="projects">
+        <div class="section-heading">
+          <p class="section-label">Projetos</p>
+          <h2>Projetos de prática e aprendizagem</h2>
+          <p>
+            Exercícios e interfaces criadas para consolidar HTML, CSS,
+            responsividade e organização de código.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="images/projeto1.png" alt="Captura do projeto Portfolio" />
+            <div>
+              <h3>Portfolio pessoal</h3>
+              <p>
+                Página pessoal responsiva para apresentar perfil, competências e
+                projetos.
+              </p>
+              <a href="./index.html">Ver demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="images/Instagram.png"
+              alt="Captura de interface inspirada no Instagram"
+            />
+            <div>
+              <h3>Interface inspirada no Instagram</h3>
+              <p>
+                Páginas de login e cadastro focadas em formulários, layout e
+                responsividade.
+              </p>
+              <a href="../Instagram/index.html">Ver demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="images/Youtube.png"
+              alt="Captura de interface inspirada no YouTube"
+            />
+            <div>
+              <h3>Layout inspirado no YouTube</h3>
+              <p>
+                Clone estático para praticar grids, sidebar, header, thumbnails
+                e detalhes de interface.
+              </p>
+              <a href="../Youtube/youtube.html">Ver demo</a>
+            </div>
+          </article>
+        </div>
+
+        <a
+          class="button dark"
+          href="https://github.com/belarminooO/FullStackRoad"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Ver repositório
         </a>
-      </div>
-    </section>
-    <!-- FIM MAIN -->
+      </section>
+      <!-- FIM PROJETOS -->
 
-    <!-- INICIO SOBRE -->
-    <section id="sobre" class="about">
-      <div>
-        <h2>Sobre</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste
-          quos laborum, neque fugit pariatur exercitatione,praesentium alias
-          eligendi impedit veniam omnis amet voluptatum numquam. <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          natus provident id facilis nam, quaerat eos nulla iure cumque fuga,
-          nesciunt ex ab inventore tempore asperiores consectetur rerum quo
-          porro?
-        </p>
-      </div>
-      <img src="images/foto-pc.png" alt="Minha foto programando" />
-    </section>
-    <!-- FIM SOBRE -->
-
-    <!-- INICIO PROJETOS -->
-    <section id="projetos" class="projects">
-      <h2>Meus projetos</h2>
-      <p>conheca meus ultimos projetos</p>
-
-      <div class="project-list">
-        <img src="images/projeto1.png" alt="Foto do projeto 1" />
-        <img src="images/projeto2.png" alt="Foto do projeto 2" />
-        <img src="images/projeto3.png" alt="Foto do projeto 3" />
-      </div>
-
-      <div class="project-list">
-        <img src="images/projeto2.png" alt="Foto do projeto 2" />
-        <img src="images/projeto1.png" alt="Foto do projeto 1" />
-        <img src="images/projeto3.png" alt="Foto do projeto 3" />
-      </div>
-
-      <button class="action">Faca um orçamento</button>
-    </section>
-    <!-- FIM PROJETOS -->
+      <!-- INICIO CONTACTOS -->
+      <section id="contacto" class="contact">
+        <p class="section-label">Contacto</p>
+        <h2>Disponível para oportunidades júnior em Lisboa ou remoto.</h2>
+        <div class="contact-links">
+          <a href="mailto:Belarmino.s.bs@gmail.com">Email</a>
+          <a
+            href="https://www.linkedin.com/in/belarmino-sacate-1b830037b/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/belarminooO"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+      <!-- FIM CONTACTOS -->
+    </main>
 
     <!-- INICIO RODAPE -->
-     <footer>
+    <footer>
       <h3>
-        <a href="#">Belarmino Sacate</a>
+        <a href="#home">Belarmino Sacate</a>
       </h3>
-      <p>Todos os direitos reservados!</p>
-     </footer>
-     <!-- FIM RODAPE -->
+      <p>Front-End Developer Júnior</p>
+    </footer>
+    <!-- FIM RODAPE -->
   </body>
 </html>
