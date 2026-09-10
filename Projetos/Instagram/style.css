@@ -86,3 +86,36 @@ input[type="password"]:focus, input[type="text"]:focus{
   outline: 0;
   border: 1px solid #a1a1a1;
 }
+
+input[type="submit"]{
+  width: 320px;
+  margin-top: 10px;
+  height: 30px;
+  border: 0;
+  background-color: #3c96ed;
+  border-radius: 4px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.info-box{
+  background-color: #FFF;
+  height: 60px;
+  border: 1px solid rgb(234, 234, 234);
+  margin: 10px auto 0; /*Cima, lados,  baixo*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box p {
+  user-select: none;
+}
+
+.info-box p a{
+  font-weight: bold;
+  user-select: none;
+}
