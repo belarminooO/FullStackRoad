@@ -82,5 +82,7 @@ body{
 
 /* INICIO RESPONSIBILIDADE */
 @media (max-width: 650px){
-  
+  .wrapper{
+    width: 350px;
+  }
 }
