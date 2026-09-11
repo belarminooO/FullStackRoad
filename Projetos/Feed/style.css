@@ -9,6 +9,7 @@ body{
   font-family:Arial, Helvetica, sans-serif;
 }
 
+/* INICIO MENU */
 .menu{
   width: 100%;
   height: 72px;
@@ -17,10 +18,69 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  margin-bottom: 2%;
 }
 
 .menu div{
   font-size: 24px;
+}
+/* FIM MENU */
+
+/* INICIO MAIN */
+.main{
+  width: 100%;
+}
+
+.wrapper{
+  width: 542px;
+  margin: auto;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%
+}
+
+.post-top{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.post-top img{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.post-mid{
+  padding-top: 1.5%;
+}
+
+.post-mid img{
+  border-radius: 12px;
+  width: 100%;
+  transition: transform .2s ease;
+}
+
+.post-mid img:hover{
+  transform: scale(1.01);
+}
+
+
+.post-actions{
+  padding-top: 1.5%;
+}
+
+.post-actions a{
+  color: black;
+  user-select: none;
+}
+/* FIM MAIN */
+
+/* INICIO RESPONSIBILIDADE */
+@media (max-width: 650px){
+  
 }
