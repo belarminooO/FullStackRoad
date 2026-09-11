@@ -1,3 +1,4 @@
+/* RESET */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -6,11 +7,18 @@
 
 a{
   text-decoration: none;
-  color: #3c96ed;
+  color: var(--button-primary);
 }
 
 body{
-  background: #FAFAFA;
+  /* Variaveis para cores */
+  --background: #FAFAFA;
+  --white: #FFFFFF;
+  --black: #000000;
+  --button-primary: #0095f6;
+  --border-primary: #e6e6e6;
+
+  background: var(--background);
   height: 100%;
   width: 100%;
   padding: 0;
@@ -19,6 +27,7 @@ body{
   line-height: 18px;
 }
 
+/* INICIO PAGINA SIGNIN */
 #wrapper{
   height: 100vh;
 }
@@ -50,8 +59,8 @@ body{
 }
 
 .login-painel{
-  background-color: #FFF;
-  border: 1px solid #e6e6e6;
+  background-color: var(--white);
+  border: 1px solid var(--border-primary);
   text-align: center;
   padding: 20px 0;
 }
@@ -68,8 +77,8 @@ form{
 }
 
 input[type="password"], input[type="text"]{
-  background-color: #FFF;
-  border: 1px solid rgb(234, 234, 234);
+  background-color: var(--white);
+  border: 1px solid var(--border-primary);
   height: 40px;
   border-radius: 4px;
   margin-top: 10px;
@@ -84,7 +93,7 @@ input[type="password"]::placeholder, input[type="text"]::placeholder{
 
 input[type="password"]:focus, input[type="text"]:focus{
   outline: 0;
-  border: 1px solid #a1a1a1;
+  border: 1px solid var(--border-primary);
 }
 
 input[type="submit"]{
@@ -94,16 +103,16 @@ input[type="submit"]{
   border: 0;
   background-color: #3c96ed;
   border-radius: 4px;
-  color: #FFF;
+  color: var(--white);
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
   cursor: pointer;
 }
 .info-box{
-  background-color: #FFF;
+  background-color: var(--white);
   height: 60px;
-  border: 1px solid rgb(234, 234, 234);
+  border: 1px solid var(--border-primary);
   margin: 10px auto 0; /*Cima, lados,  baixo*/
 
   display: flex;
@@ -141,7 +150,7 @@ footer{
 }
 
 footer a{
-  color: #000;
+  color: var(--black);
   text-transform: uppercase;
   font-weight: bold;
   margin-right: 8px;
@@ -155,9 +164,9 @@ footer a{
   padding-left: 20px;
   display: inline-block;
 }
+/* PAGINA FIM SIGNIN */
 
-/* pagina signup */
-
+/* INICIO PAGINA SIGNUP */
 #container-signup{
   margin: 0 auto;
   min-height: 100%;
@@ -182,8 +191,8 @@ footer a{
   width: 320px;
   margin: 10px 0;
   height: 35px;
-  background-color: #0095f6;
-  color: #FFF;
+  background-color: var(--button-primary);
+  color: var(--white);
   border: 0;
   border-radius: 4px;
   font-size: 15px;
@@ -200,7 +209,7 @@ footer a{
 
 .line{
   height: 1px;
-  background-color: #e6e6e6;
+  background-color: var(--border-primary);
   width: 35%;
 }
 
@@ -210,7 +219,7 @@ footer a{
   color: #8e8e8e;
   user-select: none;
 }
-/* FIM PAGINA SIGN UP */
+/* FIM PAGINA SIGNUP */
 
 /* RESPONSIBILIDADE */
 @media (max-width: 850px){
