@@ -110,7 +110,6 @@ html {
 .home-actions {
   display: flex;
   gap: 14px;
-  flex-wrap: wrap;
   margin-top: 34px;
 }
 
@@ -139,12 +138,6 @@ html {
 .button.secondary {
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.45);
-}
-
-.button.dark {
-  color: #ffffff;
-  background: #172033;
-  margin-top: 36px;
 }
 /* FIM HOME */
 
@@ -185,7 +178,7 @@ html {
 }
 
 .about img {
-  width: min(42%, 460px);
+  width: 30%;
   border-radius: 8px;
   box-shadow: 0 18px 60px rgba(23, 32, 51, 0.14);
 }
@@ -214,7 +207,7 @@ html {
   width: 100%;
   max-width: 1120px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 22px;
 }
 
@@ -257,6 +250,12 @@ html {
   font-weight: 700;
   text-decoration: none;
   margin-top: auto;
+}
+
+.button.dark {
+  color: #ffffff;
+  background: #172033;
+  margin-top: 36px;
 }
 /* FIM PROJETOS */
 
