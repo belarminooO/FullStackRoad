@@ -1,20 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carregando a fonte roboto para usar no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
- <!-- Carregando a fonte roboto para usar no projeto -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+  <body>
+    <section class="wrapper">
+      <div class="left-side">
+        <div class="form-container">
+          <h1>Nova conta</h1>
+          <form>
+            <div class="inputs">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome completo"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms">Concordo com os termos.</label>
+
+
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Criar conta"
+            />
+
+            <p>Ja possui conta? Faca <a href="#">login</a></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div>a</div>
+      </div>
+    </section>
+  </body>
 </html>
