@@ -53,7 +53,7 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: #0056FB;
+  background-color: #0056fb;
   color: white;
   font-size: 16px;
 }
@@ -76,7 +76,7 @@ input[type="password"] {
   margin-bottom: 16px;
 }
 .right-side {
-  background-color: #0056FB;
+  background-color: #0056fb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +88,7 @@ p {
   color: white;
 }
 
-.right-side p{
+.right-side p {
   max-width: 80%;
 }
 
@@ -109,25 +109,25 @@ p {
 /* FIM SIGNUP PAGE */
 
 /* RESPONSIBILIDADE */
-@media(max-width:918px){
-  .wrapper{
+@media (max-width: 918px) {
+  .wrapper {
     flex-direction: column;
-    height: auto;
   }
 
-  .left-side, .right-side{
-    padding-right: 2% ;
+  .left-side,
+  .right-side {
+    padding-right: 2%;
     padding-left: 2%;
     padding-top: 30%;
     padding-bottom: 90%;
     width: 100%;
   }
 
-  .right-side h1{
+  .right-side h1 {
     font-size: 32px;
   }
 
-  .right-side p{
+  .right-side p {
     font-size: 12px;
   }
 }
