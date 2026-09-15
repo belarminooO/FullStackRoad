@@ -18,56 +18,41 @@
   </head>
 
   <body>
-    <section class="wrapper">
-      <div class="left-side">
-        <div class="form-container">
-          <h1>Nova conta</h1>
-          <form>
-            <div class="inputs">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Nome completo"
-              />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Digite seu email"
-              />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Digite sua senha"
-              />
-            </div>
+    <main class="container">
+      <section class="left">
+        <h1>Nova conta</h1>
 
-            <input type="checkbox" name="terms" id="terms" />
-            <label for="terms">Concordo com os termos.</label>
+        <form class="form">
+          <input class="input" type="text" placeholder="Digite seu nome..." />
+          <input class="input" type="email" placeholder="Digite seu email..." />
+          <input class="input" type="password" placeholder="Digite sua senha" />
+          <div class="area">
+            <input type="radio" name="termos" id="termos" class="termos">
+            <span>Concordo com os termos</span>
+          </div>
+          <button class="button" type="submit">Nova conta</button>
+        </form>
 
-            <input
-              type="submit"
-              name="submit"
-              id="submit"
-              value="Criar conta"
-            />
-
-            <strong>Ja possui conta?</strong> Faca <a href="signin.html">login</a>
-          </form>
+        <div class="area">
+          <span class="link">
+            Ja possui uma conta? <a href="signin.html">Faca login</a></span
+          >
         </div>
-      </div>
+      </section>
 
-      <div class="right-side">
-        <div class="info">
-          <img src="assets/info.png" alt="" />
-          <h1>Leve sua carreira ao proximo nivel.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at, minima repellat esse accusantium quae mollitia voluptatem illum corrupti in laudantium modi et iure hic expedita delectus neque beatae voluptatum.
-          </p>
-        </div>
-      </div>
-    </section>
+      <section class="right">
+        <img
+          class="info-img"
+          src="assets/info.png"
+          alt="Informacoes do projeto"
+        />
+        <h2 class="subtitle">Leve sua carreira ao proximo nivel.</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          dolorum, dolore quae possimus aliquam, aperiam assumenda vitae iure
+          magni nostrum neque eaque voluptatum sint suscipit eum.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
