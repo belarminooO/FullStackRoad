@@ -53,7 +53,7 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: #0056fb;
+  background-color: #0056FB;
   color: white;
   font-size: 16px;
 }
@@ -76,7 +76,7 @@ input[type="password"] {
   margin-bottom: 16px;
 }
 .right-side {
-  background-color: #0056fb;
+  background-color: #0056FB;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,5 +106,4 @@ p {
 .info {
   max-width: 70%;
 }
-
 /* FIM SIGNUP PAGE */
