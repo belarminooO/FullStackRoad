@@ -2,7 +2,7 @@ let listElement = document.querySelector('#app ul'); // pegando a lista presente
 let inputElement = document.querySelector('#app input'); // pegando o input...
 let buttonElement = document.querySelector('#app button'); // pegando o botao...
 
-let tarefas = [];
+let tarefas = JSON.parse(localStorage.getItem('@listaTarefas')) || []; // caso existir informacao no LS faz o parse, caso contrario fica vazio.
 
 function renderTarefas(){
   listElement.innerHTML = '';
@@ -28,6 +28,8 @@ function renderTarefas(){
   })
 }
 
+renderTarefas(); // renderizacao inicial de tarefas caso existirem.
+
 //funcao para a adicao de uma tarefa a lista
 function adicionarTarefas(){
   if(inputElement.value === ''){
@@ -37,7 +39,9 @@ function adicionarTarefas(){
     let novaTarefa = inputElement.value; // pegando a tarefa digita
     tarefas.push(novaTarefa); // adicionando a lista de tareas
     inputElement.value = ''; // resetando o input.
+
     renderTarefas(); // chamando a funcao para a renderizacao de tarefas registadas.
+    salvarDados(); // atializando a lista do LS com o novo item
   }
 }
 
@@ -46,5 +50,10 @@ function deletarTarfa(posicao) {
   alert('POSICAO DO ITEM ' + posicao);
   tarefas.splice(posicao,1); // deletando a posicao da lista. (posicao, profundidade)
   renderTarefas(); // renderizando as tarefas apos a exclusao de x tarefa
+  salvarDados(); // atualizando a lista do LS apos deletar uma tarefa.
 }
 
+// funcao para guradar a lista de elementos no LS
+function salvarDados(){
+  localStorage.setItem('@listaTarefas', JSON.stringify(tarefas)); // E necessario passar para string primeiramente, e depois inserir no LS
+}
