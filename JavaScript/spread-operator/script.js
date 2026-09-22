@@ -18,7 +18,7 @@ let novaPessoa = {
   cidade: 'Odivelas',
 };
 
-console.log(novaPessoa);
+console.log(novaPessoa);  
 
 // mais um exemplo
 function novoUsuario(info){
