@@ -31,15 +31,7 @@ console.log(listaProdutos)
 let numeros = [1, 3, 5, 7, 0, 9];
 
 function ordenarLista(lista){
-  let listaTemporaria = [...lista];
-  let resultado = [];
-
-  while(listaTemporaria.length > 0){
-    let menorNumero = Math.min(...listaTemporaria);
-    resultado.push(menorNumero);
-    listaTemporaria.splice(listaTemporaria.indexOf(menorNumero), 1);
-  }
-  return resultado
+  return lista.sort();
 }
 
 let listaOrdenada = ordenarLista(numeros);
