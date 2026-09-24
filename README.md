@@ -8,10 +8,9 @@
 
 ## 🎯 Sobre o Repositório
 
-O meu objetivo atual é consolidar as bases e avançar até ao domínio do ecossistema React/Next.js e Node.js. 
-Neste momento, o meu progresso no curso é de **11%**, estando a iniciar o módulo de **React**, após ter consolidado conhecimentos em HTML, CSS e JavaScript.
+O meu objetivo atual é consolidar as bases e avançar até ao domínio do ecossistema React/Next.js e Node.js, após ter cimentado conhecimentos em HTML, CSS e JavaScript.
 
-Este repositório serve também como demonstração da minha transição e evolução para me tornar um **Junior Front-End / Web Developer**.
+Este repositório serve também como demonstração da minha evolução prática e dedicação para me tornar um **Junior FullStack Developer**.
 
 ---
 
@@ -74,10 +73,6 @@ Além dos projetos finais, mantenho o código dos desafios de cada módulo para 
 - **[Desafios JS](./Desafios)**: Exercícios de treino de JavaScript (`01-js`, `02-js`, `03-js`).
 
 ---
-
-## 👨‍💻 Sobre Mim
-
-Sou o **Belarmino Sacate**, licenciado em Engenharia Informática e Multimédia no ISEL. Neste momento, encontro-me a fortalecer ativamente as minhas competências em desenvolvimento web (React & Node.js) em busca da minha primeira oportunidade como **Junior Web Developer**.
 
 ## 📞 Contacto
 
