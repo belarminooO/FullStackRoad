@@ -79,5 +79,15 @@ Além dos projetos finais, mantenho o código dos desafios de cada módulo para 
 
 Sou o **Belarmino Sacate**, licenciado em Engenharia Informática e Multimédia no ISEL. Neste momento, encontro-me a fortalecer ativamente as minhas competências em desenvolvimento web (React & Node.js) em busca da minha primeira oportunidade como **Junior Web Developer**.
 
-- **LinkedIn:** [Belarmino Sacate](https://www.linkedin.com/in/belarmino-sacate-1b830037b/)
-- **GitHub:** [belarminooO](https://github.com/belarminooO)
+## 📞 Contacto
+
+<a href="https://www.linkedin.com/in/belarmino-sacate-1b830037b/">
+  <img align="center" alt="LinkedIn" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" />
+  LinkedIn Profile
+</a>
+<br>
+<br>
+<a href="mailto:belarmino.s.bs@gmail.com">
+  <img align="center" alt="Gmail" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" />
+  belarmino.s.bs@gmail.com
+</a>
