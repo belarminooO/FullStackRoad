@@ -3,23 +3,40 @@
 * default - implica que o import da funcao pode ser feita de maneira direta:
 * import App from './App.jsx' - neste caso esta de forma direta. Caso contrario seria necessario ser feito com chavetas {App}, pois nao teriamos o default
 * NB: SO PODE EXISTIR 1 EXPORT DEFAULT POR ARQUIVO.
-*
-* -> JSX < Mistura do HTML / XML
 */
 
+import { Oferta } from './Oferta' // com '{}' pois o export E sem default.
+
+//useState permite que uma variavel possa mudar sem que a pagina seja atualizada
+import  {useState} from 'react'
 
 //Componente Principal
 export default function App(){
+
+  //cupom = nome da propriedade, usado para acessar o valor do estado.
+  // setCupom = usado para trocar o estado da variavel
+  // ('') = conteudo que sera mostrado por defeito
+  const [cupom, setCupom] = useState('PR10OFF')
+
+  function resgataCupom(){
+    setCupom('CUPOM RESGATADO!') // troca o estado da propriedade cupom...
+  }
+
  return(
   <div>
-    <h1>Primeiro Projecto</h1>
-    {/* para renderizar uma funcao/elemento precisamos usa-se tag com o nome da mesma. */}
+    <h1>Ofertas Online</h1>
 
+    <h4>Cupom primeira compra: {cupom}</h4>
+
+    <button onClick={resgataCupom}>
+      Resgatar cupom
+    </button>
+
+    <hr />
     <Oferta titulo='Nike Air Max - 50% OFF'
       valor='1.500'
       descricao='super confortaveis'
     />
-
     <hr />
 
     <Oferta titulo='Meia Adidas - 10% OFF'
@@ -28,21 +45,4 @@ export default function App(){
     />
   </div>
  )
-}
-
-// componente para renderizar o nome.
-// podemos passar propriedades a um elemento
-// assim podemos passar como atributos para que sejam renderizados no elemento.
-export function Oferta({titulo, valor, descricao}){
-  return(
-    //Nao da ter 2 ou mais elementos HTML sem estarem dentro de uma tag
-    // usa-se divs ou fragments '<>' para agrupar os elementos.
-    <>
-      <h2>{titulo} Valor: {valor}</h2>
-      <h3>Descricao:</h3>
-      <p>
-        {descricao}
-      </p>
-    </>
-  )
 }
