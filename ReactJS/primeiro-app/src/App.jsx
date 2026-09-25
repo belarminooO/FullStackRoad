@@ -15,16 +15,34 @@ export default function App(){
     <h1>Primeiro Projecto</h1>
     {/* para renderizar uma funcao/elemento precisamos usa-se tag com o nome da mesma. */}
 
-    <Nome/>
+    <Oferta titulo='Nike Air Max - 50% OFF'
+      valor='1.500'
+      descricao='super confortaveis'
+    />
 
-    <Nome/>
+    <hr />
+
+    <Oferta titulo='Meia Adidas - 10% OFF'
+      valor='25'
+      descricao='meias longas'
+    />
   </div>
  )
 }
 
 // componente para renderizar o nome.
-export function Nome(){
+// podemos passar propriedades a um elemento
+// assim podemos passar como atributos para que sejam renderizados no elemento.
+export function Oferta({titulo, valor, descricao}){
   return(
-    <h2>Ola Belarmino Sacate!</h2>
+    //Nao da ter 2 ou mais elementos HTML sem estarem dentro de uma tag
+    // usa-se divs ou fragments '<>' para agrupar os elementos.
+    <>
+      <h2>{titulo} Valor: {valor}</h2>
+      <h3>Descricao:</h3>
+      <p>
+        {descricao}
+      </p>
+    </>
   )
 }
