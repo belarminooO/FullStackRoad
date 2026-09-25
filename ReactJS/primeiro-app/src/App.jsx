@@ -17,6 +17,7 @@ export default function App(){
   // setCupom = usado para trocar o estado da variavel
   // ('') = conteudo que sera mostrado por defeito
   const [cupom, setCupom] = useState('PR10OFF')
+  const [user, setUser] = useState('Visitante')
 
   function resgataCupom(){
     setCupom('CUPOM RESGATADO!') // troca o estado da propriedade cupom...
@@ -24,9 +25,13 @@ export default function App(){
 
  return(
   <div>
-    <h1>Ofertas Online</h1>
+    <h1>Ola, {user}, bem vindo a Ofertas online!</h1>
 
     <h4>Cupom primeira compra: {cupom}</h4>
+
+    <button onClick={() => setUser('Belarmino')}>
+      Acessar
+    </button>
 
     <button onClick={resgataCupom}>
       Resgatar cupom
@@ -36,13 +41,19 @@ export default function App(){
     <Oferta titulo='Nike Air Max - 50% OFF'
       valor='1.500'
       descricao='super confortaveis'
+      cupom={cupom}
     />
     <hr />
 
     <Oferta titulo='Meia Adidas - 10% OFF'
       valor='25'
       descricao='meias longas'
+      cupom={cupom}
     />
+
+    <hr />
+
+    <strong>Cupom disponivel: {cupom}</strong>
   </div>
  )
 }
