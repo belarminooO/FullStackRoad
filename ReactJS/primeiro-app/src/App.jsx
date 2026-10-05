@@ -16,8 +16,9 @@ export default function App(){
   //cupom = nome da propriedade, usado para acessar o valor do estado.
   // setCupom = usado para trocar o estado da variavel
   // ('') = conteudo que sera mostrado por defeito
-  const [cupom, setCupom] = useState('PR10OFF')
+  const [cupom, setCupom] = useState('PR1020') // cria uma propriedade chamada cupom, com valor inicial de 'PRIMEIRA COMPRA'
   const [user, setUser] = useState('Visitante')
+  const idade = 18
 
   function resgataCupom(){
     setCupom('CUPOM RESGATADO!') // troca o estado da propriedade cupom...
@@ -25,9 +26,10 @@ export default function App(){
 
  return(
   <div>
-    <h1>Ola, {user}, bem vindo a Ofertas online!</h1>
+    <h1>Ola, {user === "Visitante" ? "Visitante" : user}, bem vindo a Ofertas online!</h1>
 
-    <h4>Cupom primeira compra: {cupom}</h4>
+    {/* Renderizacao condicional: se cumpom estiver preenchido, entao(&&) "Cumpom primeira compra e: {cupom}" */}
+    {cupom && <h4>Cumpom primeira compra e: {cupom}</h4>}
 
     <button onClick={() => setUser('Belarmino')}>
       Acessar
@@ -53,7 +55,11 @@ export default function App(){
 
     <hr />
 
-    <strong>Cupom disponivel: {cupom}</strong>
+    {/* Renderizacao condicional: se o cupom for igual a "PR1020", exibe o cupom primeira compra, caso contrario exibe o cupom disponivel */}
+    { cupom === "PR1020" ? <strong>Cupom primeira compra: {cupom}</strong> : <strong>Cupom disponivel: {cupom}</strong> }
+
+    {/* Renderizacao condicional: se a idade for maior ou igual a 18....*/}
+    {idade >= 18 ? <p>Voce e maior de idade</p> : <p>Voce e menor de idade</p>}
   </div>
  )
 }

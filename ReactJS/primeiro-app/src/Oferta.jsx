@@ -12,7 +12,7 @@ export function Oferta({titulo, valor, descricao, cupom}){
         {descricao}
       </p>
 
-      <b>Cupom: {cupom}</b>
+      {cupom && <b>Cumpom: {cupom}</b>}
     </>
   )
 }
