@@ -43,22 +43,18 @@ return(
 
 function ListaCompras (){
 
-  const [lista, setLista] = useState(['Pagar a conta de luz'])
+  const [lista, setLista] = useState(['Comprar coca-cola', 'Comprar pão']);
 
   useEffect(() => {
-    // O useEffect é executado quando o componente é montado
-    console.log('COMPONENTE LISTACOMPRAS MONTADO USEEFFECT CHAMADO')
-
-    // O return do useEffect é executado quando o componente é desmontado
-    return () => {
-      console.log('COMPONENTE LISTACOMPRAS DESMONTADO')
+    const lista = localStorage.getItem('lista-compras');
+    if(lista){
+      setLista(JSON.parse(lista));
     }
-  }, [lista]) // array de dependencias, se estiver vazio, o useEffect será executado apenas uma vez, quando o componente for montado, se tiver alguma dependencia, o useEffect será executado sempre que a dependencia mudar.
-
+  })
   function adicionarItem(formData){
     const item = formData.get('item');
     setLista([...lista, item]);
-    console.log("ITEM ADICIONADO!")
+    localStorage.setItem('lista-compras', JSON.stringify([...lista, item]));
   }
 
   return(
@@ -72,6 +68,15 @@ function ListaCompras (){
           Adicionar
         </button>
       </form>
+      <br/> <br/>
+
+      <h4>Itens </h4>
+
+      <ul>
+        {lista.map( (item, index) =>
+          <li key = {index}>{item}</li>
+        )}
+      </ul>
     </div>
   )
 }
