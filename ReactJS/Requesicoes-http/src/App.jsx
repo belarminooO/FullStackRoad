@@ -4,6 +4,7 @@ import './style.css'
 export default function App(){
 
   const [nutri, setNutri] = useState([])
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
 
@@ -15,6 +16,7 @@ export default function App(){
       .then( data => {
         console.log(data)
         setNutri(data)
+        setLoading(false)
       })
       .catch((e) => console.log(e))
     }
@@ -29,7 +31,9 @@ export default function App(){
         <strong> React Nutri </strong>
       </header>
 
-      {nutri.map((item, index) => (
+      {loading && <p>Carregando dados...</p> }
+
+      {!loading && nutri.map((item, index) => (
         <article key={index} className='post'>
 
           <strong>{item.titulo}</strong>
