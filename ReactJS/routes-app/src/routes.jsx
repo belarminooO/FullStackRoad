@@ -4,6 +4,8 @@ import { Contactos } from './pages/contactos/index'
 import { Sobre } from './pages/sobre/index'
 import { NotFound } from './pages/not-found/index'
 import { Produto } from './pages/produto/index'
+import { Descricao } from './pages/produto/descricao/index'
+import { Avaliacao } from './pages/produto/avaliacao'
 
 
 export function RoutesApp(){
@@ -14,7 +16,10 @@ export function RoutesApp(){
         <Route path="/contactos" element={<Contactos />}/>
         <Route path="/sobre" element={<Sobre />}/>
 
-        <Route path="/produto/:id" element={<Produto />}/>
+        <Route path="/produto/:id" element={<Produto />}>
+          <Route index element={<Descricao />}/>
+          <Route path='avaliacao' element={<Avaliacao/>}/>
+        </Route>
 
         <Route path="*" element={<NotFound/>}/>
       </Routes>

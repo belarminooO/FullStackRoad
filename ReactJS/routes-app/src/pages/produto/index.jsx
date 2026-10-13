@@ -1,4 +1,4 @@
-import { useParams } from "react-router"
+import { useParams, Outlet} from "react-router"
 
 export function Produto (){
 
@@ -8,6 +8,9 @@ export function Produto (){
   return(
     <div>
       <h1>Detalhe do produto: {id}</h1>
+
+      <br /> <hr />
+      <Outlet />
     </div>
   )
 }
