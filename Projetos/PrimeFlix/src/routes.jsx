@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import Home from './pages/Home/index';
 import Filme from './pages/Filme/index'
 import Header from './components/Header/index'
+import Erro from './pages/Erro/index'
 
 
 export function RoutesApp(){
@@ -13,6 +14,8 @@ export function RoutesApp(){
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/filme/:id' element={<Filme/>}/>
+
+        <Route path='*' element={<Erro/>}/>
       </Routes>
     </BrowserRouter>
   )
