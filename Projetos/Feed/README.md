@@ -2,7 +2,9 @@
 
 Uma interface estática de feed social criada para praticar composição de cartões, imagens de perfil e comportamento responsivo com CSS.
 
-![Pré-visualização do Social Feed Layout](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização do Social Feed Layout" width="900" />
+</a>
 
 ## Vídeo de demonstração
 

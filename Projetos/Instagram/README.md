@@ -2,7 +2,9 @@
 
 Recriação de uma interface de autenticação inspirada no Instagram, desenvolvida para praticar formulários, duas colunas e responsividade.
 
-![Pré-visualização do Instagram Login Clone](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização do Instagram Login Clone" width="900" />
+</a>
 
 ## Vídeo de demonstração
 

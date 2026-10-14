@@ -2,7 +2,9 @@
 
 Portfolio responsivo de Belarmino Sacate, criado para apresentar perfil, competências e projetos de front-end.
 
-![Pré-visualização do Portfolio Pessoal](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização do Portfolio Pessoal" width="900" />
+</a>
 
 ## Vídeo de demonstração
 

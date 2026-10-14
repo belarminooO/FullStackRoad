@@ -2,7 +2,9 @@
 
 Recriação estática da página inicial do YouTube para praticar layouts com CSS Grid, cabeçalho fixo, barra lateral e cartões de vídeo.
 
-![Pré-visualização do YouTube Home Clone](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização do YouTube Home Clone" width="900" />
+</a>
 
 ## Vídeo de demonstração
 

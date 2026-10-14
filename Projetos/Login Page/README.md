@@ -2,7 +2,9 @@
 
 Interface de autenticação com páginas de início de sessão e registo, pensada para consolidar formulários, layout em duas colunas e responsividade.
 
-![Pré-visualização da Responsive Login Page](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização da Responsive Login Page" width="900" />
+</a>
 
 ## Vídeo de demonstração
 

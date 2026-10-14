@@ -2,7 +2,9 @@
 
 Aplicação web simples para registar e remover tarefas. Os dados permanecem guardados no navegador através de `localStorage`.
 
-![Pré-visualização da Lista de Tarefas](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização da Lista de Tarefas" width="900" />
+</a>
 
 ## Vídeo de demonstração
 

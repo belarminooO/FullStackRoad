@@ -2,7 +2,9 @@
 
 Aplicação React para descobrir filmes em exibição, consultar detalhes e criar uma lista pessoal de favoritos.
 
-![Pré-visualização do PrimeFlix](./docs/media/preview.png)
+<a href="./docs/media/preview.png">
+  <img src="./docs/media/preview.png" alt="Pré-visualização do PrimeFlix" width="900" />
+</a>
 
 ## Vídeo de demonstração
 
