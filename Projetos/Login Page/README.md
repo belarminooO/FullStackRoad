@@ -15,9 +15,18 @@ Interface de autenticação com páginas de início de sessão e registo, pensad
 - Navegação entre os dois fluxos.
 - Adaptação para ecrãs pequenos.
 
+## O que aprofundei
+
+- Marcação de formulários de início de sessão e registo com foco em clareza visual.
+- Organização de conteúdos em colunas e alinhamento de elementos com CSS.
+- Construção de uma interface responsiva para diferentes tamanhos de ecrã.
+
 ## Tecnologias
 
-`HTML5` · `CSS3`
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="CSS3" />
+</div>
 
 ## Como executar
 

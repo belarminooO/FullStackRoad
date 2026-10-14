@@ -14,9 +14,18 @@ Uma interface estática de feed social criada para praticar composição de cart
 - Estrutura semântica com navegação, conteúdo principal e cartões de publicação.
 - Layout adaptável a diferentes larguras de ecrã.
 
+## O que aprofundei
+
+- Organização de uma página com elementos semânticos como `nav`, `section` e `article`.
+- Composição de cartões com imagens de perfil, conteúdo visual e ações.
+- Responsividade e controlo de espaçamentos para manter a leitura confortável em vários ecrãs.
+
 ## Tecnologias
 
-`HTML5` · `CSS3`
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="CSS3" />
+</div>
 
 ## Como executar
 

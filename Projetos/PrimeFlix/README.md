@@ -16,9 +16,23 @@ Aplicação React para descobrir filmes em exibição, consultar detalhes e cria
 - Guarda e remove filmes da lista pessoal através de `localStorage`.
 - Mostra notificações de sucesso e de itens repetidos.
 
+## O que aprofundei
+
+- Gestão de estado e ciclo de vida de componentes com `useState` e `useEffect`.
+- Navegação entre páginas e leitura de parâmetros de rota com React Router.
+- Consumo assíncrono da API do TMDB com Axios, incluindo estados de carregamento e erro.
+- Persistência de favoritos no `localStorage`, notificações e configuração segura de variáveis de ambiente.
+
 ## Tecnologias
 
-`React` · `Vite` · `React Router` · `Axios` · `React Toastify` · `TMDB API`
+<div align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&amp;logo=react&amp;logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&amp;logo=vite&amp;logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/React%20Router-CA4245?style=for-the-badge&amp;logo=reactrouter&amp;logoColor=white" alt="React Router" />
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&amp;logo=axios&amp;logoColor=white" alt="Axios" />
+  <img src="https://img.shields.io/badge/TMDB_API-01B4E4?style=for-the-badge&amp;logo=themoviedatabase&amp;logoColor=white" alt="TMDB API" />
+</div>
 
 ## Como executar
 
