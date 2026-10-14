@@ -1,6 +1,6 @@
 
 
-export function Home (){
+export default function Home (){
   return(
     <div>
       <h1>BEM VINDO A HOME</h1>
