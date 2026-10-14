@@ -1,7 +1,7 @@
 <h1 align="center">FullStackRoad 🛤️</h1>
 
 <p align="center">
-  Repositório dedicado à organização da minha jornada de aprendizagem, exercícios práticos e projetos de desenvolvimento web (Front-end e Back-end). Este repositório reflete o meu progresso no curso <strong>FullStack Pro</strong> da <a href="https://hotmart.com/pt-br/club/sujeito-programador/products/1793920">Sujeito Programador</a>.
+  Repositório dedicado à organização da minha jornada de aprendizagem, exercícios práticos e projetos de desenvolvimento web. Este repositório reflete o meu progresso no curso <strong>FullStack Pro</strong> da <a href="https://hotmart.com/pt-br/club/sujeito-programador/products/1793920">Sujeito Programador</a>.
 </p>
 
 ---
