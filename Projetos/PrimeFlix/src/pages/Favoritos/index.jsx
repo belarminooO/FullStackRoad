@@ -1,18 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router';
 import './favoritos.css'
 import { toast } from 'react-toastify'
 
 export default function Favoritos(){
 
-  const [filmes, setFilmes] = useState([]);
-
-  useEffect(()=>{
-
+  const [filmes, setFilmes] = useState(() => {
     const minhaLista = localStorage.getItem('@primeflix');
-    setFilmes(JSON.parse(minhaLista) || [])
-
-  },[])
+    return JSON.parse(minhaLista) || [];
+  });
 
   function excluirFilme(id){
     let filtroFilmes = filmes.filter((item)=>{

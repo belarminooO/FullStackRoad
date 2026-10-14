@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Pré-visualização do Social Feed Layout">
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f0f5ff"/><stop offset="1" stop-color="#d8e3f4"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#background)"/>
+  <rect width="1280" height="88" fill="#182438"/>
+  <text x="120" y="56" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="white">Desafio Feed</text>
+  <g filter="url(#shadow)">
+    <rect x="280" y="130" width="720" height="490" rx="18" fill="white"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <circle cx="340" cy="192" r="31" fill="#f0a366"/>
+    <circle cx="340" cy="184" r="12" fill="#56372e"/>
+    <path d="M319 215c8-27 35-27 43 0" fill="#56372e"/>
+    <text x="390" y="188" font-size="24" font-weight="700" fill="#182438">Belarmino</text>
+    <text x="390" y="216" font-size="17" fill="#6b7280">A partilhar uma nova ideia</text>
+    <rect x="320" y="248" width="640" height="230" rx="12" fill="#366a92"/>
+    <circle cx="755" cy="346" r="105" fill="#77b8cf" opacity=".78"/>
+    <path d="M370 462c65-72 119-122 180-119 65 4 97 42 152 14 56-28 115-25 214 105" fill="#244a69" opacity=".72"/>
+    <path d="M410 430l80-88 68 70 70-101 112 119" fill="none" stroke="#e6f7ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="320" y1="520" x2="960" y2="520" stroke="#e5e7eb"/>
+    <text x="350" y="570" font-size="21" font-weight="700" fill="#305f8b">Curtir</text>
+    <text x="485" y="570" font-size="21" font-weight="700" fill="#305f8b">Responder</text>
+  </g>
+</svg>

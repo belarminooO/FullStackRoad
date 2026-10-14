@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Pré-visualização da Lista de Tarefas">
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eef2ff"/><stop offset="1" stop-color="#dbeafe"/></linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#background)"/>
+  <g filter="url(#shadow)">
+    <rect x="280" y="115" width="720" height="510" rx="24" fill="white"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="350" y="200" font-size="42" font-weight="700" fill="#172554">Lista de tarefas</text>
+    <text x="350" y="235" font-size="19" fill="#64748b">Organiza o que tens para fazer.</text>
+    <rect x="350" y="277" width="410" height="62" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="374" y="316" font-size="18" fill="#94a3b8">Digite uma tarefa</text>
+    <rect x="778" y="277" width="145" height="62" rx="10" fill="#2563eb"/>
+    <text x="813" y="316" font-size="19" font-weight="700" fill="white">Registar</text>
+    <g fill="none" stroke="#cbd5e1" stroke-width="2">
+      <rect x="350" y="375" width="570" height="58" rx="10"/>
+      <rect x="350" y="449" width="570" height="58" rx="10"/>
+      <rect x="350" y="523" width="570" height="58" rx="10"/>
+    </g>
+    <g font-size="20" fill="#1e293b">
+      <text x="385" y="412">Rever fundamentos de JavaScript</text>
+      <text x="385" y="486">Atualizar projetos no GitHub</text>
+      <text x="385" y="560">Preparar próxima candidatura</text>
+    </g>
+    <g font-size="17" font-weight="700" fill="#dc2626">
+      <text x="830" y="412">Excluir</text>
+      <text x="830" y="486">Excluir</text>
+      <text x="830" y="560">Excluir</text>
+    </g>
+  </g>
+</svg>

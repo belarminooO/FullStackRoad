@@ -4,6 +4,8 @@ import api from '../../services/api'
 import './filme-info.css'
 import { toast } from 'react-toastify'
 
+const apiKey = import.meta.env.VITE_TMDB_API_KEY;
+
 export default function Filme (){
 
   const [filme, setFilme] = useState({});
@@ -17,7 +19,7 @@ export default function Filme (){
     async function loadFilme() {
       await api.get(`/movie/${id}`, {
         params:{
-          api_key:'2e426b8b9c4a4f7860c031c915554e23',
+          api_key: apiKey,
           language: 'pt-BR',
         }
       })

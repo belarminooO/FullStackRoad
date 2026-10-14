@@ -3,7 +3,7 @@ import api from '../../services/api'
 import { Link } from 'react-router'
 import './home.css'
 
-// URL DA API: /movie/now_playing?api_key=2e426b8b9c4a4f7860c031c915554e23
+const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
 export default function Home (){
   const [filmes, setFilmes] = useState([]);
@@ -13,7 +13,7 @@ export default function Home (){
     async function loadFilmes(){
       const response = await api.get('movie/now_playing', {
         params:{
-          api_key:'2e426b8b9c4a4f7860c031c915554e23',
+          api_key: apiKey,
           language: 'pt-BR',
           page: 1,
         }

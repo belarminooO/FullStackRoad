@@ -1,16 +1,40 @@
-# React + Vite
+# PrimeFlix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação React para descobrir filmes em exibição, consultar detalhes e criar uma lista pessoal de favoritos.
 
-Currently, two official plugins are available:
+![Pré-visualização do PrimeFlix](./docs/media/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Vídeo de demonstração
 
-## React Compiler
+[▶ Ver demonstração curta](./docs/media/demo.mp4)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Lista filmes atualmente em cartaz através da API do TMDB.
+- Mostra título, imagem, sinopse e avaliação de cada filme.
+- Pesquisa trailers no YouTube.
+- Guarda e remove filmes da lista pessoal através de `localStorage`.
+- Mostra notificações de sucesso e de itens repetidos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias
+
+`React` · `Vite` · `React Router` · `Axios` · `React Toastify` · `TMDB API`
+
+## Como executar
+
+```bash
+npm install
+cp .env.example .env
+# Adiciona a tua chave da API do TMDB em VITE_TMDB_API_KEY
+npm run dev
+```
+
+Para gerar uma chave, cria uma conta no [TMDB](https://www.themoviedb.org/settings/api). O ficheiro `.env` não é versionado.
+
+## Scripts
+
+```bash
+npm run dev
+npm run build
+npm run lint
+```
