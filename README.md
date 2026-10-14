@@ -57,9 +57,13 @@ Uma página de login moderna para treinar conceitos de UI/UX e alinhamentos CSS.
 
 ### [5. Lista de Tarefas (To-Do List)](./Projetos/Lista%20de%20tarefas)
 Aplicação para gerir tarefas, criada para começar a interagir com lógica JavaScript aplicada ao DOM.
+<br>
+![Lista de Tarefas Screenshot](./ListaTarefas.png)
 
 ### [6. Feed Social](./Projetos/Feed)
 Interface simples que simula um feed de uma rede social.
+<br>
+![Feed Social Screenshot](./Feed.png)
 
 ---
 
