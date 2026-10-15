@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react"
-import api from '../../services/api'
+import { obterTmdb, temAcessoAoTmdb } from '../../services/api'
 import { Link } from 'react-router'
 import './home.css'
-
-const apiKey = import.meta.env.VITE_TMDB_API_KEY?.trim();
 
 export default function Home (){
   const [filmes, setFilmes] = useState([]);
@@ -12,16 +10,15 @@ export default function Home (){
 
   useEffect(()=>{
     async function loadFilmes(){
-      if (!apiKey) {
+      if (!temAcessoAoTmdb) {
         setErro(true);
         setLoading(false);
         return;
       }
 
       try {
-        const response = await api.get('movie/now_playing', {
+        const response = await obterTmdb('movie/now_playing', {
           params:{
-            api_key: apiKey,
             language: 'pt-BR',
             page: 1,
           }
@@ -50,7 +47,7 @@ export default function Home (){
     return(
       <div className="loading">
         <h2>Não foi possível carregar os filmes.</h2>
-        <p>Confirma a chave do TMDB no ficheiro <code>.env</code> e reinicia o servidor.</p>
+        <p>Confirma a configuração da API do TMDB e tenta novamente.</p>
       </div>
     )
   }

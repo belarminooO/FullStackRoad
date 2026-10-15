@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from "react-router"
-import api from '../../services/api'
+import { obterTmdb } from '../../services/api'
 import './filme-info.css'
 import { toast } from 'react-toastify'
-
-const apiKey = import.meta.env.VITE_TMDB_API_KEY?.trim();
 
 export default function Filme (){
 
@@ -17,9 +15,8 @@ export default function Filme (){
   useEffect(()=>{
 
     async function loadFilme() {
-      await api.get(`/movie/${id}`, {
+      await obterTmdb(`movie/${id}`, {
         params:{
-          api_key: apiKey,
           language: 'pt-BR',
         }
       })
