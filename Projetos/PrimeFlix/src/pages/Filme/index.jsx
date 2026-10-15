@@ -4,7 +4,7 @@ import api from '../../services/api'
 import './filme-info.css'
 import { toast } from 'react-toastify'
 
-const apiKey = import.meta.env.VITE_TMDB_API_KEY;
+const apiKey = import.meta.env.VITE_TMDB_API_KEY?.trim();
 
 export default function Filme (){
 
