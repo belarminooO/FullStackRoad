@@ -1,4 +1,4 @@
-<h1 align="center">FullStackRoad 🛤️</h1>
+<h1 align="center">FullStackRoad</h1>
 
 <p align="center">
   Repositório dedicado à organização da minha jornada de aprendizagem, exercícios práticos e projetos de desenvolvimento web. Este repositório reflete o meu progresso no curso <strong>FullStack Pro</strong> da <a href="https://hotmart.com/pt-br/club/sujeito-programador/products/1793920">Sujeito Programador</a>.
@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Sobre o Repositório
+## Sobre o Repositório
 
 O meu objetivo atual é consolidar as bases e avançar até ao domínio do ecossistema React/Next.js e Node.js, após ter cimentado conhecimentos em HTML, CSS e JavaScript.
 
@@ -14,7 +14,7 @@ Este repositório serve também como demonstração da minha evolução prática
 
 ---
 
-## 🚀 Tecnologias Abordadas no Curso
+## Tecnologias Abordadas no Curso
 
 O curso FullStack Pro é um programa completo (do zero ao avançado) que foca as tecnologias mais procuradas pelo mercado. Ao longo deste percurso, estarei a trabalhar com:
 
@@ -31,7 +31,7 @@ O curso FullStack Pro é um programa completo (do zero ao avançado) que foca as
 
 ---
 
-## 💻 Projetos
+## Projetos
 
 Durante a aprendizagem, os seguintes projetos front-end foram desenvolvidos para treinar conceitos de marcação semântica, estilos responsivos (CSS Flexbox/Grid) e lógica com JavaScript.
 
@@ -79,7 +79,7 @@ Interface simples que simula um feed de uma rede social.
 
 ---
 
-## 📚 Material de Estudo e Desafios
+## Material de Estudo e Desafios
 
 Além dos projetos finais, mantenho o código dos desafios de cada módulo para futura consulta e revisão de conceitos.
 
@@ -90,7 +90,7 @@ Além dos projetos finais, mantenho o código dos desafios de cada módulo para 
 
 ---
 
-## 📞 Contacto
+## Contacto
 
 <a href="https://www.linkedin.com/in/belarmino-sacate-1b830037b/">
   <img align="center" alt="LinkedIn" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" />
