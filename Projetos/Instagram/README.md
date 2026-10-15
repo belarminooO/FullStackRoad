@@ -6,10 +6,6 @@ Recriação de uma interface de autenticação inspirada no Instagram, desenvolv
   <img src="./docs/media/preview.png" alt="Pré-visualização do Instagram Login Clone" width="900" />
 </a>
 
-## Vídeo de demonstração
-
-[▶ Ver demonstração curta](./docs/media/demo.mp4)
-
 ## Funcionalidades
 
 - Página de início de sessão.

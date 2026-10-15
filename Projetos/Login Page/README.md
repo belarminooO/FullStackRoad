@@ -6,10 +6,6 @@ Interface de autenticação com páginas de início de sessão e registo, pensad
   <img src="./docs/media/preview.png" alt="Pré-visualização da Responsive Login Page" width="900" />
 </a>
 
-## Vídeo de demonstração
-
-[▶ Ver demonstração curta](./docs/media/demo.mp4)
-
 ## Funcionalidades
 
 - Página de início de sessão.

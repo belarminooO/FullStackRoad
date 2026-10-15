@@ -6,10 +6,6 @@ Recriação estática da página inicial do YouTube para praticar layouts com CS
   <img src="./docs/media/preview.png" alt="Pré-visualização do YouTube Home Clone" width="900" />
 </a>
 
-## Vídeo de demonstração
-
-[▶ Ver demonstração curta](./docs/media/demo.mp4)
-
 ## O que foi construído
 
 - Cabeçalho com pesquisa, ações e notificações.

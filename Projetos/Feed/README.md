@@ -6,10 +6,6 @@ Uma interface estática de feed social criada para praticar composição de cart
   <img src="./docs/media/preview.png" alt="Pré-visualização do Social Feed Layout" width="900" />
 </a>
 
-## Vídeo de demonstração
-
-[▶ Ver demonstração curta](./docs/media/demo.mp4)
-
 ## O que foi construído
 
 - Feed com três publicações e respetivos autores.

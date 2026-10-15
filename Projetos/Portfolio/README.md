@@ -6,10 +6,6 @@ Portfolio responsivo de Belarmino Sacate, criado para apresentar perfil, compet�
   <img src="./docs/media/preview.png" alt="Pré-visualização do Portfolio Pessoal" width="900" />
 </a>
 
-## Vídeo de demonstração
-
-[▶ Ver demonstração curta](./docs/media/demo.mp4)
-
 ## Conteúdo
 
 - Apresentação profissional e resumo de competências.
