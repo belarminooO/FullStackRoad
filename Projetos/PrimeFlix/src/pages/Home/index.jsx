@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
-import { obterTmdb, temAcessoAoTmdb } from '../../services/api'
+import api from '../../services/api'
 import { Link } from 'react-router'
 import './home.css'
+
+const apiKey = '2e426b8b9c4a4f7860c031c915554e23';
 
 export default function Home (){
   const [filmes, setFilmes] = useState([]);
@@ -10,15 +12,10 @@ export default function Home (){
 
   useEffect(()=>{
     async function loadFilmes(){
-      if (!temAcessoAoTmdb) {
-        setErro(true);
-        setLoading(false);
-        return;
-      }
-
       try {
-        const response = await obterTmdb('movie/now_playing', {
+        const response = await api.get('movie/now_playing', {
           params:{
+            api_key: apiKey,
             language: 'pt-BR',
             page: 1,
           }

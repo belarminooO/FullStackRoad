@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from "react-router"
-import { obterTmdb } from '../../services/api'
+import api from '../../services/api'
 import './filme-info.css'
 import { toast } from 'react-toastify'
+
+const apiKey = '2e426b8b9c4a4f7860c031c915554e23';
 
 export default function Filme (){
 
@@ -15,8 +17,9 @@ export default function Filme (){
   useEffect(()=>{
 
     async function loadFilme() {
-      await obterTmdb(`movie/${id}`, {
+      await api.get(`/movie/${id}`, {
         params:{
+          api_key: apiKey,
           language: 'pt-BR',
         }
       })

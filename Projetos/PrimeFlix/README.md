@@ -36,22 +36,12 @@ Aplicação React para descobrir filmes em exibição, consultar detalhes e cria
   <img src="https://img.shields.io/badge/TMDB_API-01B4E4?style=for-the-badge&amp;logo=themoviedatabase&amp;logoColor=white" alt="TMDB API" />
 </div>
 
-## Executar localmente
+## Como executar
 
 ```bash
 npm install
-cp .env.example .env
-# Adiciona a tua chave da API do TMDB em VITE_TMDB_API_KEY
 npm run dev
 ```
-
-Para gerar uma chave, cria uma conta no [TMDB](https://www.themoviedb.org/settings/api). O ficheiro `.env` não é versionado.
-
-## Demo pública
-
-O projeto está preparado para ser publicado na Vercel sem expor a chave da API no navegador. Ao criar o projeto na Vercel, adiciona a variável de ambiente `TMDB_API_KEY` com a tua chave do TMDB e faz um novo deploy. A função `api/tmdb.js` recebe os pedidos da aplicação e comunica com o TMDB no servidor.
-
-Quem visitar a demo publicada não precisa de criar um ficheiro `.env`. Quem clonar o repositório para executar localmente continua a usar a sua própria chave em `VITE_TMDB_API_KEY`.
 
 ## Scripts
 
