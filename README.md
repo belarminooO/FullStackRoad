@@ -20,7 +20,7 @@ Este repositório reúne o código que desenvolvi durante essa jornada. Funciona
 
 ## Pontos abordados no FullStack PRO
 
-| Área | Pontos abordados |
+| Pontos abordados |
 | --- | --- |
 | **Fundamentos da web** | HTML5, CSS moderno, JavaScript completo, desafios e projetos práticos. |
 | **Desenvolvimento web** | React, projetos com React, Firebase, TypeScript, React com TypeScript e plataformas com autenticação e base de dados. |
