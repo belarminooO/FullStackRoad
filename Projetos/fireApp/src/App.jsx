@@ -1,13 +1,14 @@
 import { db } from './fireBaseConection'
-import { doc, setDoc, collection, addDoc, getDoc, getDocs } from 'firebase/firestore'
+import { doc, setDoc, collection, addDoc, getDoc, getDocs, updateDoc } from 'firebase/firestore'
 import { useState } from 'react'
 import './app.css'
 
 
-function App() {
+export default function App() {
 
   const[titulo, setTitulo] = useState('')
   const[autor, setAutor] = useState('')
+  const[idPost, setIdPost] = useState('');
 
   const[posts, setPosts] = useState([]);
 
@@ -43,6 +44,7 @@ function App() {
   })
   }
 
+
   async function buscarPost(){
 
     // pegar 1 doc em especifico:
@@ -53,8 +55,8 @@ function App() {
     //   setTitulo(snapshot.data().titulo)
     //   setAutor(snapshot.data().autor)
     // })
-    // .catch(()=>{
-    //   console.log('ERRO AO BUSCAR')
+    // .catch((e)=>{
+    //   console.log('ERRO AO BUSCAR: ' + e)
     // })
 
 
@@ -78,14 +80,38 @@ function App() {
     .catch((e)=>{
       console.log('ERRORO AO BUSCAR: ' + e)
     })
-
   }
+
+
+  async function editarPost() {
+
+    const docRef = doc(db, 'posts', idPost)
+    await updateDoc(docRef,{
+      titulo: titulo,
+      autor: autor
+    })
+    .then(()=>{
+      console.log('POST ATUALIZADO')
+      setIdPost('')
+      setTitulo('')
+      setAutor('')
+    })
+    .catch((e)=>{
+      console.log('ERRO AO ATUALIZAR O POST: ' + e)
+    })
+  }
+
 
   return (
     <div>
       <h1>ReactjS + Firebase</h1>
 
       <div className='container'>
+
+        {/* id do post */}
+        <label htmlFor="">Id do Post:</label>
+        <input placeholder='Digite o ID do Post' value={idPost} onChange={ (e) => setIdPost(e.target.value)} />
+        <br />
 
         {/* campo titulo */}
         <label>Titulo:</label>
@@ -97,11 +123,15 @@ function App() {
 
         <button onClick={handleAdd}>Cadastrar</button>
         <button onClick={buscarPost}>Buscar post</button>
+        <br />
+
+        <button onClick={editarPost}>Atualizar post</button>
 
         <ul>
           {posts.map((post)=>{
             return(
               <li key={post.id}>
+                <strong>ID: {post.id} </strong> <br />
                 <span>Titulo: {post.titulo} </span> <br />
                 <span>Autor: {post.autor} </span> <br /> <br />
               </li>
@@ -114,5 +144,3 @@ function App() {
 
   )
 }
-
-export default App
