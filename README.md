@@ -42,12 +42,16 @@ Página de portefólio responsiva para apresentar o meu perfil, conhecimentos e 
   <img src="./Projetos/Portfolio/images/portfolio.png" alt="Captura do Portefólio Pessoal" width="900" />
 </a>
 
+---
+
 ### [2. Interface do Instagram (Login)](./Projetos/Instagram)
 Recriação da página inicial e de login do Instagram, desenvolvida para praticar a estruturação de formulários, organização de *assets* e layout responsivo.
 <br>
 <a href="./Projetos/Portfolio/images/instagram-focus.png">
   <img src="./Projetos/Portfolio/images/instagram-focus.png" alt="Captura da Interface do Instagram" width="900" />
 </a>
+
+---
 
 ### [3. Layout do YouTube](./Projetos/Youtube)
 Página estática com a interface clássica do YouTube. O foco principal foi o uso de `CSS Grid`, barras laterais (*sidebars*), miniaturas (*thumbnails*) e espaçamentos globais.
@@ -56,12 +60,16 @@ Página estática com a interface clássica do YouTube. O foco principal foi o u
   <img src="./Projetos/Portfolio/images/Youtube.png" alt="Captura do Layout do YouTube" width="900" />
 </a>
 
+---
+
 ### [4. Página de Login Moderna](./Projetos/Login%20Page)
 Uma página de login moderna para treinar conceitos de UI/UX e alinhamentos CSS.
 <br>
 <a href="./Projetos/Portfolio/images/login-page.png">
   <img src="./Projetos/Portfolio/images/login-page.png" alt="Captura da Página de Login Moderna" width="900" />
 </a>
+
+---
 
 ### [5. Lista de Tarefas (To-Do List)](./Projetos/Lista%20de%20tarefas)
 Aplicação para gerir tarefas, criada para começar a interagir com lógica JavaScript aplicada ao DOM.
