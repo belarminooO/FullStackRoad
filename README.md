@@ -28,7 +28,6 @@ Este repositório reúne o código que desenvolvi durante essa jornada. Funciona
 | **4. SaaS completo** | Desenvolvimento de um SaaS com Next.js e base de dados, login com Google, Stripe, subscrições, deploy e pagamentos em produção. |
 | **5. Desenvolvimento backend** | Node.js, APIs REST, padrões, JWT, Prisma, PostgreSQL, sistema de pizzaria, sistema de barbearia e NestJS com testes automatizados. |
 | **6. IA para developers** | Uso de IA no fluxo de trabalho de engenharia de software, agents, subagents, MCP servers, contexto, rules, prompts e ferramentas de desenvolvimento. |
-| **7. Bónus e mercado** | LinkedIn, preparação para entrevistas, contratos de freelancing, aulas extra e lives com a turma. |
 
 A estrutura acima acompanha o programa apresentado na [página oficial do curso](https://sujeitoprogramador.com/fullstackpro/).
 
@@ -53,43 +52,45 @@ A estrutura acima acompanha o programa apresentado na [página oficial do curso]
 
 ## Projetos desenvolvidos
 
-| Projeto | Foco | Código | Repositório público |
-| --- | --- | --- | --- |
-| Portefólio pessoal | Layout responsivo e apresentação profissional | [Abrir](./Projetos/Portfolio) | [portfolio](https://github.com/belarminooO/portfolio) |
-| Interface do Instagram | Formulários, assets e responsividade | [Abrir](./Projetos/Instagram) | [instagram-login-clone](https://github.com/belarminooO/instagram-login-clone) |
-| Layout do YouTube | CSS Grid, barras laterais e miniaturas | [Abrir](./Projetos/Youtube) | [youtube-home-clone](https://github.com/belarminooO/youtube-home-clone) |
-| Página de login | UI, UX e alinhamentos CSS | [Abrir](./Projetos/Login%20Page) | [responsive-login-page](https://github.com/belarminooO/responsive-login-page) |
-| Lista de tarefas | DOM e lógica em JavaScript | [Abrir](./Projetos/Lista%20de%20tarefas) | [lista-de-tarefas](https://github.com/belarminooO/lista-de-tarefas) |
-| Feed social | Construção de uma interface de rede social | [Abrir](./Projetos/Feed) | [social-feed-layout](https://github.com/belarminooO/social-feed-layout) |
-| PrimeFlix | React, API do TMDB, rotas e favoritos | [Abrir](./Projetos/PrimeFlix) | [primeflix](https://github.com/belarminooO/primeflix) |
+### [Portefólio pessoal](https://github.com/belarminooO/portfolio)
 
-### Pré-visualizações
-
-<a href="./Projetos/Portfolio/images/portfolio.png">
+<a href="https://github.com/belarminooO/portfolio">
   <img src="./Projetos/Portfolio/images/portfolio.png" alt="Portefólio pessoal" width="900" />
 </a>
 
-<a href="./Projetos/Portfolio/images/instagram-focus.png">
+### [Interface do Instagram](https://github.com/belarminooO/instagram-login-clone)
+
+<a href="https://github.com/belarminooO/instagram-login-clone">
   <img src="./Projetos/Portfolio/images/instagram-focus.png" alt="Interface do Instagram" width="900" />
 </a>
 
-<a href="./Projetos/Portfolio/images/Youtube.png">
+### [Layout do YouTube](https://github.com/belarminooO/youtube-home-clone)
+
+<a href="https://github.com/belarminooO/youtube-home-clone">
   <img src="./Projetos/Portfolio/images/Youtube.png" alt="Layout do YouTube" width="900" />
 </a>
 
-<a href="./Projetos/Portfolio/images/login-page.png">
-  <img src="./Projetos/Portfolio/images/login-page.png" alt="Página de login moderna" width="900" />
+### [Página de login responsiva](https://github.com/belarminooO/responsive-login-page)
+
+<a href="https://github.com/belarminooO/responsive-login-page">
+  <img src="./Projetos/Portfolio/images/login-page.png" alt="Página de login responsiva" width="900" />
 </a>
 
-<a href="./Projetos/Portfolio/images/lista-tarefas-focus.png">
+### [Lista de tarefas](https://github.com/belarminooO/lista-de-tarefas)
+
+<a href="https://github.com/belarminooO/lista-de-tarefas">
   <img src="./Projetos/Portfolio/images/lista-tarefas-focus.png" alt="Lista de tarefas" width="900" />
 </a>
 
-<a href="./Projetos/Portfolio/images/social-feed-focus.png">
+### [Feed social](https://github.com/belarminooO/social-feed-layout)
+
+<a href="https://github.com/belarminooO/social-feed-layout">
   <img src="./Projetos/Portfolio/images/social-feed-focus.png" alt="Feed social" width="900" />
 </a>
 
-<a href="./Projetos/Portfolio/images/primeflix-focus.png">
+### [PrimeFlix](https://github.com/belarminooO/primeflix)
+
+<a href="https://github.com/belarminooO/primeflix">
   <img src="./Projetos/Portfolio/images/primeflix-focus.png" alt="PrimeFlix" width="900" />
 </a>
 
