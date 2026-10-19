@@ -70,6 +70,8 @@ Aplicação para gerir tarefas, criada para começar a interagir com lógica Jav
   <img src="./Projetos/Portfolio/images/lista-tarefas-focus.png" alt="Captura da Lista de Tarefas" width="900" />
 </a>
 
+---
+
 ### [6. Feed Social](./Projetos/Feed)
 Interface simples que simula um feed de uma rede social.
 <br>
