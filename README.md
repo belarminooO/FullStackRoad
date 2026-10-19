@@ -1,102 +1,110 @@
 <h1 align="center">FullStackRoad</h1>
 
 <p align="center">
-  Repositório dedicado à organização da minha jornada de aprendizagem, exercícios práticos e projetos de desenvolvimento web. Este repositório reflete o meu progresso no curso <strong>FullStack Pro</strong> da <a href="https://hotmart.com/pt-br/club/sujeito-programador/products/1793920">Sujeito Programador</a>.
+  Registo da minha evolução no desenvolvimento web através de exercícios, desafios e projetos práticos realizados ao longo do <strong>FullStack PRO</strong>, da Sujeito Programador.
+</p>
+
+<p align="center">
+  <a href="https://sujeitoprogramador.com/fullstackpro/">Conhecer o curso FullStack PRO</a>
 </p>
 
 ---
 
-## Sobre o Repositório
+## Sobre o curso
 
-O meu objetivo atual é consolidar as bases e avançar até ao domínio do ecossistema React/Next.js e Node.js, após ter cimentado conhecimentos em HTML, CSS e JavaScript.
+O [FullStack PRO](https://sujeitoprogramador.com/fullstackpro/) é uma formação prática que parte dos fundamentos da web e evolui para desenvolvimento frontend, backend, aplicações full-stack e ferramentas de IA para desenvolvimento. O percurso combina aulas passo a passo, desafios e projetos completos, desde HTML e CSS até aplicações com React, Next.js, Node.js, bases de dados e pagamentos.
 
-Este repositório serve também como demonstração da minha evolução prática e dedicação para me tornar um **Junior FullStack Developer**.
+Este repositório reúne o código que desenvolvi durante essa jornada. Funciona simultaneamente como arquivo de estudo, espaço de experimentação e portefólio da minha progressão como **Junior Full-Stack Developer**.
 
 ---
 
-## Tecnologias Abordadas no Curso
+## Percurso do FullStack PRO
 
-O curso FullStack Pro é um programa completo (do zero ao avançado) que foca as tecnologias mais procuradas pelo mercado. Ao longo deste percurso, estarei a trabalhar com:
+| Etapa | Módulos e temas abordados |
+| --- | --- |
+| **1. Fundamentos da web** | HTML5, CSS moderno, JavaScript completo, desafios e projetos práticos. |
+| **2. Desenvolvimento web** | React, projetos com React, Firebase, TypeScript, React com TypeScript e plataformas com autenticação e base de dados. |
+| **3. Aplicações profissionais** | Plataforma de venda de carros, testes automatizados com React, Next.js e Next 15, sites e sistemas web profissionais. |
+| **4. SaaS completo** | Desenvolvimento de um SaaS com Next.js e base de dados, login com Google, Stripe, subscrições, deploy e pagamentos em produção. |
+| **5. Desenvolvimento backend** | Node.js, APIs REST, padrões, JWT, Prisma, PostgreSQL, sistema de pizzaria, sistema de barbearia e NestJS com testes automatizados. |
+| **6. IA para developers** | Uso de IA no fluxo de trabalho de engenharia de software, agents, subagents, MCP servers, contexto, rules, prompts e ferramentas de desenvolvimento. |
+| **7. Bónus e mercado** | LinkedIn, preparação para entrevistas, contratos de freelancing, aulas extra e lives com a turma. |
+
+A estrutura acima acompanha o programa apresentado na [página oficial do curso](https://sujeitoprogramador.com/fullstackpro/).
+
+---
+
+## Tecnologias abordadas
 
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
 </div>
 
 ---
 
-## Projetos
+## Projetos desenvolvidos
 
-Durante a aprendizagem, os seguintes projetos front-end foram desenvolvidos para treinar conceitos de marcação semântica, estilos responsivos (CSS Flexbox/Grid) e lógica com JavaScript.
+| Projeto | Foco | Código | Repositório público |
+| --- | --- | --- | --- |
+| Portefólio pessoal | Layout responsivo e apresentação profissional | [Abrir](./Projetos/Portfolio) | [portfolio](https://github.com/belarminooO/portfolio) |
+| Interface do Instagram | Formulários, assets e responsividade | [Abrir](./Projetos/Instagram) | [instagram-login-clone](https://github.com/belarminooO/instagram-login-clone) |
+| Layout do YouTube | CSS Grid, barras laterais e miniaturas | [Abrir](./Projetos/Youtube) | [youtube-home-clone](https://github.com/belarminooO/youtube-home-clone) |
+| Página de login | UI, UX e alinhamentos CSS | [Abrir](./Projetos/Login%20Page) | [responsive-login-page](https://github.com/belarminooO/responsive-login-page) |
+| Lista de tarefas | DOM e lógica em JavaScript | [Abrir](./Projetos/Lista%20de%20tarefas) | [lista-de-tarefas](https://github.com/belarminooO/lista-de-tarefas) |
+| Feed social | Construção de uma interface de rede social | [Abrir](./Projetos/Feed) | [social-feed-layout](https://github.com/belarminooO/social-feed-layout) |
+| PrimeFlix | React, API do TMDB, rotas e favoritos | [Abrir](./Projetos/PrimeFlix) | [primeflix](https://github.com/belarminooO/primeflix) |
 
-### [1. Portefólio Pessoal](./Projetos/Portfolio)
-Página de portefólio responsiva para apresentar o meu perfil, conhecimentos e ligações para outros projetos.
-<br>
+### Pré-visualizações
+
 <a href="./Projetos/Portfolio/images/portfolio.png">
-  <img src="./Projetos/Portfolio/images/portfolio.png" alt="Captura do Portefólio Pessoal" width="900" />
+  <img src="./Projetos/Portfolio/images/portfolio.png" alt="Portefólio pessoal" width="900" />
 </a>
 
----
-
-### [2. Interface do Instagram (Login)](./Projetos/Instagram)
-Recriação da página inicial e de login do Instagram, desenvolvida para praticar a estruturação de formulários, organização de *assets* e layout responsivo.
-<br>
 <a href="./Projetos/Portfolio/images/instagram-focus.png">
-  <img src="./Projetos/Portfolio/images/instagram-focus.png" alt="Captura da Interface do Instagram" width="900" />
+  <img src="./Projetos/Portfolio/images/instagram-focus.png" alt="Interface do Instagram" width="900" />
 </a>
 
----
-
-### [3. Layout do YouTube](./Projetos/Youtube)
-Página estática com a interface clássica do YouTube. O foco principal foi o uso de `CSS Grid`, barras laterais (*sidebars*), miniaturas (*thumbnails*) e espaçamentos globais.
-<br>
 <a href="./Projetos/Portfolio/images/Youtube.png">
-  <img src="./Projetos/Portfolio/images/Youtube.png" alt="Captura do Layout do YouTube" width="900" />
+  <img src="./Projetos/Portfolio/images/Youtube.png" alt="Layout do YouTube" width="900" />
 </a>
 
----
-
-### [4. Página de Login Moderna](./Projetos/Login%20Page)
-Uma página de login moderna para treinar conceitos de UI/UX e alinhamentos CSS.
-<br>
 <a href="./Projetos/Portfolio/images/login-page.png">
-  <img src="./Projetos/Portfolio/images/login-page.png" alt="Captura da Página de Login Moderna" width="900" />
+  <img src="./Projetos/Portfolio/images/login-page.png" alt="Página de login moderna" width="900" />
+</a>
+
+<a href="./Projetos/Portfolio/images/lista-tarefas-focus.png">
+  <img src="./Projetos/Portfolio/images/lista-tarefas-focus.png" alt="Lista de tarefas" width="900" />
+</a>
+
+<a href="./Projetos/Portfolio/images/social-feed-focus.png">
+  <img src="./Projetos/Portfolio/images/social-feed-focus.png" alt="Feed social" width="900" />
+</a>
+
+<a href="./Projetos/Portfolio/images/primeflix-focus.png">
+  <img src="./Projetos/Portfolio/images/primeflix-focus.png" alt="PrimeFlix" width="900" />
 </a>
 
 ---
 
-### [5. Lista de Tarefas (To-Do List)](./Projetos/Lista%20de%20tarefas)
-Aplicação para gerir tarefas, criada para começar a interagir com lógica JavaScript aplicada ao DOM.
-<br>
-<a href="./ListaTarefas.png">
-  <img src="./Projetos/Portfolio/images/lista-tarefas-focus.png" alt="Captura da Lista de Tarefas" width="900" />
-</a>
+## Conteúdos deste repositório
 
----
-
-### [6. Feed Social](./Projetos/Feed)
-Interface simples que simula um feed de uma rede social.
-<br>
-<a href="./Feed.png">
-  <img src="./Projetos/Portfolio/images/social-feed-focus.png" alt="Captura do Feed Social" width="900" />
-</a>
-
----
-
-## Material de Estudo e Desafios
-
-Além dos projetos finais, mantenho o código dos desafios de cada módulo para futura consulta e revisão de conceitos.
-
-- **[Módulo HTML](./HTML)**: Estruturação, tags semânticas, tabelas, formulários, áudio e vídeo.
-- **[Módulo CSS](./CSS)**: Seletores, modelo de caixas (*box model*), flexbox, grid, animações e responsividade.
-- **[Módulo JavaScript](./JavaScript)**: Lógica de programação, variáveis, funções, manipulação de arrays e objetos, manipulação do DOM e eventos.
-- **[Desafios JS](./Desafios)**: Exercícios de treino de JavaScript (`01-js`, `02-js`, `03-js`).
+| Área | Conteúdo |
+| --- | --- |
+| [HTML](./HTML) | Estrutura semântica, tabelas, formulários, áudio e vídeo. |
+| [CSS](./CSS) | Seletores, modelo de caixas, Flexbox, Grid, animações e responsividade. |
+| [JavaScript](./JavaScript) | Lógica, funções, arrays, objetos, DOM e eventos. |
+| [Desafios](./Desafios) | Exercícios práticos de JavaScript. |
+| [ReactJS](./ReactJS) | Estudos e exercícios centrados em React. |
+| [Projetos](./Projetos) | Aplicações desenvolvidas ao longo do percurso. |
 
 ---
 
