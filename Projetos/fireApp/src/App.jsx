@@ -1,5 +1,5 @@
 import { db } from './fireBaseConection'
-import { doc, setDoc, collection, addDoc, getDoc } from 'firebase/firestore'
+import { doc, setDoc, collection, addDoc, getDoc, getDocs } from 'firebase/firestore'
 import { useState } from 'react'
 import './app.css'
 
@@ -9,9 +9,11 @@ function App() {
   const[titulo, setTitulo] = useState('')
   const[autor, setAutor] = useState('')
 
+  const[posts, setPosts] = useState([]);
+
 
   async function handleAdd(){
-
+  // criar um doc com id especifico
   // setDoc - Tem de se especificar o id do doc a ser criado
   //   await setDoc(doc(db, 'posts', '12345'),{
   //     titulo: titulo,
@@ -42,16 +44,41 @@ function App() {
   }
 
   async function buscarPost(){
-    const postRef = doc(db, 'posts', '12345')
 
-    await getDoc(postRef)
+    // pegar 1 doc em especifico:
+    // const postRef = doc(db, 'posts', '12345')
+
+    // await getDoc(postRef)
+    // .then((snapshot)=>{
+    //   setTitulo(snapshot.data().titulo)
+    //   setAutor(snapshot.data().autor)
+    // })
+    // .catch(()=>{
+    //   console.log('ERRO AO BUSCAR')
+    // })
+
+
+    const postRef = collection(db, 'posts')
+    await getDocs(postRef)
     .then((snapshot)=>{
-      setTitulo(snapshot.data().titulo)
-      setAutor(snapshot.data().autor)
+
+      let lista = [];
+
+      snapshot.forEach((doc)=>{
+        lista.push({
+          id: doc.id,
+          titulo: doc.data().titulo,
+          autor: doc.data().autor,
+        })
+      })
+
+      setPosts(lista);
+
     })
-    .catch(()=>{
-      console.log('ERRO AO BUSCAR')
+    .catch((e)=>{
+      console.log('ERRORO AO BUSCAR: ' + e)
     })
+
   }
 
   return (
@@ -69,9 +96,18 @@ function App() {
         <textarea type='text' placeholder='Autor do post' value={autor} onChange={ (e)=> setAutor(e.target.value)}></textarea>
 
         <button onClick={handleAdd}>Cadastrar</button>
-
         <button onClick={buscarPost}>Buscar post</button>
 
+        <ul>
+          {posts.map((post)=>{
+            return(
+              <li key={post.id}>
+                <span>Titulo: {post.titulo} </span> <br />
+                <span>Autor: {post.autor} </span> <br /> <br />
+              </li>
+            )
+          })}
+        </ul>
       </div>
 
     </div>
