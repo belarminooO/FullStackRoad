@@ -21,14 +21,13 @@ Este repositório reúne o código que desenvolvi durante essa jornada. Funciona
 ## Pontos abordados no FullStack PRO
 
 | Pontos abordados |
-| --- | --- |
-| **Fundamentos da web** | HTML5, CSS moderno, JavaScript completo, desafios e projetos práticos. |
-| **Desenvolvimento web** | React, projetos com React, Firebase, TypeScript, React com TypeScript e plataformas com autenticação e base de dados. |
-| **Aplicações profissionais** | Plataforma de venda de carros, testes automatizados com React, Next.js e Next 15, sites e sistemas web profissionais. |
-| **SaaS completo** | Desenvolvimento de um SaaS com Next.js e base de dados, login com Google, Stripe, subscrições, deploy e pagamentos em produção. |
-| **Desenvolvimento backend** | Node.js, APIs REST, padrões, JWT, Prisma, PostgreSQL, sistema de pizzaria, sistema de barbearia e NestJS com testes automatizados. |
-| **IA para developers** | Uso de IA no fluxo de trabalho de engenharia de software, agents, subagents, MCP servers, contexto, rules, prompts e ferramentas de desenvolvimento. |
-
+| --- |
+| **Fundamentos da web:** HTML5, CSS moderno, JavaScript completo, desafios e projetos práticos. |
+| **Desenvolvimento web:** React, projetos com React, Firebase, TypeScript, React com TypeScript e plataformas com autenticação e base de dados. |
+| **Aplicações profissionais:** Plataforma de venda de carros, testes automatizados com React, Next.js e Next 15, sites e sistemas web profissionais. |
+| **SaaS completo:** desenvolvimento de um SaaS com Next.js e base de dados, login com Google, Stripe, subscrições, deploy e pagamentos em produção. |
+| **Desenvolvimento backend:** Node.js, APIs REST, padrões, JWT, Prisma, PostgreSQL, sistema de pizzaria, sistema de barbearia e NestJS com testes automatizados. |
+| **IA para developers:** uso de IA no fluxo de trabalho de engenharia de software, agents, subagents, MCP servers, contexto, rules, prompts e ferramentas de desenvolvimento. |
 A estrutura acima acompanha o programa apresentado na [página oficial do curso](https://sujeitoprogramador.com/fullstackpro/).
 
 ---
