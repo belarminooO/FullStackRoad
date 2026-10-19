@@ -2,7 +2,7 @@ import { db } from './fireBaseConection'
 import { auth } from './fireBaseConection'
 
 import { doc, setDoc, collection, addDoc, getDoc, getDocs, updateDoc, deleteDoc, onSnapshot } from 'firebase/firestore'
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth'
 import { useState, useEffect } from 'react'
 import './app.css'
 
@@ -15,6 +15,9 @@ export default function App() {
 
   const[email, setEmail] = useState('');
   const[senha, setSenha] = useState('')
+
+  const[user, setUser] = useState(false);
+  const[userDetail, setUserDetail] = useState({})
 
   const[posts, setPosts] = useState([]);
 
@@ -147,6 +150,7 @@ export default function App() {
     await createUserWithEmailAndPassword(auth, email, senha)
     .then(()=>{
       console.log('USUARIO CADASTRADO COM SUCESSO!')
+
       setEmail('')
       setSenha('')
     })
@@ -159,9 +163,47 @@ export default function App() {
     })
   }
 
+
+  async function logarUsuario(){
+
+    await signInWithEmailAndPassword(auth, email, senha)
+    .then((value)=>{
+
+      console.log('USUARIO LOGADO COM SUCESSO!')
+      console.log(value.user)
+
+      setUserDetail({
+        uid: value.user.uid,
+        email: value.user.email,
+      })
+      setUser(true)
+
+      setEmail('')
+      setSenha('')
+    })
+    .catch((error)=>{
+      console.log('ERRO AO FAZER LOGIN: ' + error)
+    })
+  }
+
+  async function fazerLogOut(){
+    await signOut(auth)
+    setUser(false)
+    setUserDetail('')
+  }
+
   return (
     <div>
       <h1>ReactjS + Firebase</h1>
+
+      {user && (
+        <div>
+          <strong>Seja bem vindo(a) (Voce esta logado!)</strong> <br />
+          <span>ID: {userDetail.uid} - Email: {userDetail.email}</span> <br />
+          <button onClick={fazerLogOut}>Sair da conta</button>
+          <br /> <br />
+        </div>
+      )}
 
       <div className='container'>
         <h2>Usuarios</h2>
@@ -172,6 +214,7 @@ export default function App() {
         <input value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Digite a sua senha' />
 
         <button onClick={novoUsuario}>Cadastrar</button>
+        <button onClick={logarUsuario}>Fazer login</button>
       </div>
 
       <br /> <br />
