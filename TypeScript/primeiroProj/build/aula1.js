@@ -1,11 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const nome = 'Belarmino';
+const nome = 'Belarmino Sacate';
 console.log('Bem vindo: ' + nome);
-class Sistema {
-    ip;
-    constructor(ip) {
-        this.ip = ip;
-    }
-}
+console.log('Aprendendo TS na pratica');
+console.log('TESTE!!');
 //# sourceMappingURL=aula1.js.map
