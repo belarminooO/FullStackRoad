@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+let statusAtual = 1;
+let mudaStatus = 0;
+mudaStatus = statusAtual;
+mudaStatus = statusAtual;
+console.log(mudaStatus);
+let query = 'pizza';
+let searchTerm = query;
+console.log('Search TERM ', searchTerm);
+//# sourceMappingURL=type_assertions.js.map
