@@ -29,7 +29,7 @@ const GTA6 = new Jogo("123.345.5.10");
 try{
   GTA6.setServidorIP = "124.234.1.2"
 }catch(error){
-  console.log("ERROR: ", error.message);
+  console.log("ERROR: ", error);
 }
 
 console.log(GTA6.getServidorIP); // podemos charmar sem os parenteses.

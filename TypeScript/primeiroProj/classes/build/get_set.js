@@ -23,7 +23,7 @@ try {
     GTA6.setServidorIP = "124.234.1.2";
 }
 catch (error) {
-    console.log("ERROR: ", error.message);
+    console.log("ERROR: ", error);
 }
 console.log(GTA6.getServidorIP); // podemos charmar sem os parenteses.
 //# sourceMappingURL=get_set.js.map
