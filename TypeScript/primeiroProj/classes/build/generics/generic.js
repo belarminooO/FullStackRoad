@@ -4,7 +4,7 @@
   Permite criar estruturas que serao adaptaveis a varios tipos de dados.
   (ajudando a reaproveitar melhor o nosso codigo e deixa-lo mais flexivel.)
 
-  podemos usar em:
+   podemos usar em:
   funcoes | interfaces / type | classes
 */
 Object.defineProperty(exports, "__esModule", { value: true });
