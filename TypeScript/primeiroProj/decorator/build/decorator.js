@@ -33,7 +33,10 @@ Sistema = __decorate([
 function setIpServidor(novoIp) {
     return (target) => {
         return class extends target {
-            ip = novoIp;
+            constructor() {
+                super(...arguments);
+                this.ip = novoIp;
+            }
         };
     };
 }
