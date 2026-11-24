@@ -1,5 +1,4 @@
 "use strict";
-//Decorator em metodos > So E chamado quando o nosso metodo E chamado, diferente do decorator em classes.
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,23 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-function verificaPessoa(idade) {
-    return (target, key, descriptor) => {
-        // console.log("Target: ", target);
-        // console.log("Key: ", key);
-        // console.log("Desciptor: ", descriptor);
-        const metodoOriginal = descriptor.value; //salvando o metodo original
-        descriptor.value = function () {
-            if (idade < 18) {
-                console.log("Estamos a cadastrar como pessoa menor de idade");
-            }
-            else {
-                console.log("Adulto cadastrado no sistema");
-                return metodoOriginal.apply(this); // continuando a execucao da funcao apos a validacao...
-            }
-        };
-    };
-}
+//Decorator em metodos > So E chamado quando o nosso metodo E chamado, diferente do decorator em classes.
+const verificaPessoa_1 = require("./decorators/verificaPessoa");
 class Pessoa {
     constructor(nome) {
         this.nome = nome;
@@ -33,7 +17,7 @@ class Pessoa {
     }
 }
 __decorate([
-    verificaPessoa(26)
+    (0, verificaPessoa_1.verificaPessoa)(26)
 ], Pessoa.prototype, "cadastrarPessoa", null);
 const pessoa1 = new Pessoa("Belarmino Sacate");
 pessoa1.cadastrarPessoa();
