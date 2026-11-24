@@ -30,7 +30,7 @@ class Sistema{
 // ==========================PRATICANDO===============================
 
 function setIpServidor(novoIp: string){
-  
+
   return (target: any) => { // o target E o contrutor da classe
     return class extends target{
       ip = novoIp
