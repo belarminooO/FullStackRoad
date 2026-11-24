@@ -29,4 +29,19 @@ let Sistema = class Sistema {
 Sistema = __decorate([
     logInfo("Servidor esta rodando!")
 ], Sistema);
+// ==========================PRATICANDO===============================
+function setIpServidor(novoIp) {
+    return (target) => {
+        return class extends target {
+            ip = novoIp;
+        };
+    };
+}
+let Servidor = class Servidor {
+};
+Servidor = __decorate([
+    setIpServidor("192.123.50.12")
+], Servidor);
+const servidor1 = new Servidor();
+console.log(servidor1);
 //# sourceMappingURL=decorator.js.map
