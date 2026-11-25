@@ -1,14 +1,34 @@
 import { useState } from 'react'
 
+interface infoAlunoProps{
+  nome: string;
+  idade: string;
+}
+
 export default function App(){
 
   const [input, setInput] = useState("")
-  const [aluno, setAluno] = useState("Sem nenhum nome")
   const [idade, setIdade] = useState("")
+  const [contador, setContador] = useState(0)
+
+  const [infoAluno, setInfoAluno] = useState<infoAlunoProps>()
 
   function mostrarAluno(){
-    console.log(idade);
-    setAluno(input);
+
+    setInfoAluno({
+      nome: input,
+      idade: idade,
+    })
+  }
+
+  function adicionar(){
+    setContador(valorAtual => valorAtual + 1)
+  }
+
+  function diminuir(){
+    if(contador === 0 ) return
+
+    setContador(valorAtual => valorAtual -1)
   }
 
   return(
@@ -27,7 +47,17 @@ export default function App(){
 
       <hr />
 
-      <h3>Bem vindo: {aluno}</h3>
+      {/* o "?" serve como um operador para deixar o campo vazio, ja que o useState pode estar sem informacao */}
+      <h3>Bem vindo: {infoAluno?.nome}</h3>
+      <h4>Idade: {infoAluno?.idade}</h4>
+
+      <hr />
+      <br />
+
+      <h1>Contador com useState</h1>
+
+      <button onClick={adicionar}>+</button> {contador} <button onClick={diminuir}>-</button>
+
     </div>
   )
 }
